@@ -1,0 +1,16 @@
+
+B
+java:S5164" Call "remove()" on "rememberMe".(ÓŒš¶şÿÿÿÿ8Ç¦Êá.
+M
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8¾ê¯Êá.
+T	java:S106D"9Replace this use of System.out or System.err by a logger.(ÿŠ¶z8àŠÏá.
+U	java:S106I"9Replace this use of System.out or System.err by a logger.(ñšÔ8—øøÍá.
+§
+java:S1130&"„Remove the declaration of thrown exception 'org.springframework.security.core.AuthenticationException' which is a runtime exception.(¸Ğ»’ùÿÿÿÿ8Ç¦Êá.
+Z	java:S106-"9Replace this use of System.out or System.err by a logger.(£•—Ñıÿÿÿÿ8ı»†Îá.
+Z	java:S106F"9Replace this use of System.out or System.err by a logger.(Ï±Èÿşÿÿÿÿ8ªå¼Îá.
+l
+java:S1128"ORemove this unused import 'org.springframework.security.core.GrantedAuthority'.(½Á±ÿ8¾ê¯Êá.
+U	java:S1062"9Replace this use of System.out or System.err by a logger.(ôÂÀ­8¨ÇâÎá.
+Z
+java:S1128"8Remove this unused import 'java.util.stream.Collectors'.(Óóº´úÿÿÿÿ8¾ê¯Êá.
