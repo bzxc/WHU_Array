@@ -16,16 +16,19 @@
         </if>
         where courseId=#{courseId}
     </update>
-    <select id="findCourseById">
+    <select id="findCourseById" resultType="com.array.commonmodule.bean.Course">
         select * from course where courseId=#{courseId}
     </select>
-    <select id="findCourseByName">
+    <select id="findCourseByName" resultType="com.array.commonmodule.bean.Course">
         select * from course where courseName=#{courseName}
     </select>
-    <select id="findAllCourse">
+    <select id="findAllCourse" resultType="com.array.commonmodule.bean.Course">
         select * from course
     </select>
-    <select id="findUserByCourseId">
-
+    <select id="findStudentByCourseId" resultType="com.array.commonmodule.bean.Student">
+        SELECT s.* FROM course c LEFT JOIN user_course uc on c.courseId=uc.courseId LEFT JOIN student s ON uc.userId=s.userId WHERE c.courseId=#{courseId}
+    </select>
+    <select id="findHomeWorkByCourseId" resultType="com.array.commonmodule.bean.HomeWork">
+        select * from homework where courseId=#{courseId}
     </select>
 </mapper>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.array.coursedataservice.mapper.RecordMapper">
+    <insert id="addRecord" parameterType="com.array.commonmodule.bean.Record">
+        insert into record set id=#{id},userId=#{userId},questionId=#{questionId},recordGrade=#{recordGrade},recordContent=#{recordContent}
+    </insert>
+    <select id="findRecordByQuestionIdAndUserId" resultType="com.array.commonmodule.bean.Record">
+        select from record where questionId=#{questionId} and userId=#{userId}
+    </select>
+</mapper>
+
+<!--        private Long id;-->
+<!--        private Long userId;-->
+<!--        private Long questionId;-->
+<!--        private Long recordGrade;-->
+<!--        private String recordContent;-->
