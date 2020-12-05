@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.array.coursedataservice.mapper.CourseMapper">
+    <insert id="addCourse" parameterType="com.array.commonmodule.bean.Course">
+        insert into course set courseId=#{courseId},teacherId=#{teacherId},courseName=#{courseName}
+    </insert>
+    <delete id="deleteCourse">
+        delete from course where courseId=#{courseId}
+    </delete>
+    <update id="updateCourse" parameterType="com.array.commonmodule.bean.Course">
+        update course set courseId=#{courseId},teacherId=#{teacherId},courseName=#{courseName}
+        <if test="examId!=null and examId!=''">
+            ,examId=#{examId}
+        </if>
+        where courseId=#{courseId}
+    </update>
+    <select id="findCourseById">
+        select * from course where courseId=#{courseId}
+    </select>
+    <select id="findCourseByName">
+        select * from course where courseName=#{courseName}
+    </select>
+    <select id="findAllCourse">
+        select * from course
+    </select>
+    <select id="findUserByCourseId">
+
+    </select>
+</mapper>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="course-data-service" />
+        <module name="user-data-service" />
+        <module name="eureka-server" />
+        <module name="array-server" />
+        <module name="common-module" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="course-servise" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="array-server" options="-parameters" />
+      <module name="common-module" options="-parameters" />
+      <module name="course-data-service" options="-parameters" />
+      <module name="course-servise" options="-parameters" />
+      <module name="eureka-server" options="-parameters" />
+      <module name="user-data-service" options="-parameters" />
+    </option>
+  </component>
+</project>

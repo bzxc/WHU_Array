@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.array.userdataservice.mapper.StudentMapper">
+    <insert id="addStudent" parameterType="com.array.commonmodule.bean.Student">
+        insert into student set name=#{name},password=#{password}
+    </insert>
+    <delete id="deleteStudentById">
+        delete from student where userid=#{id}
+    </delete>
+    <update id="updateStudent">
+        update student set name=#{name},password=#{password}
+        <if test="studentId!=null and studentId!=''">
+            ,studentId=#{studentId}
+        </if>
+        <if test="nickName!=null and nickName!=''">
+            ,nickName=#{nickName}
+        </if>
+        <if test="mail!=null and mail!=''">
+            ,mail=#{mail}
+        </if>
+        <if test="telephone!=null and telephone!=''">
+            ,telephone=#{telephone}
+        </if>
+        <if test="userFace!=null and userFace!=''">
+            ,userFace=#{userFace}
+        </if>
+        where userid=#{id}
+    </update>
+    <select id="findAll" resultType="com.array.commonmodule.bean.Student">
+        select * from student
+    </select>
+    <select id="findStudentById" resultType="com.array.commonmodule.bean.Student">
+        select * from student where userid=#{id}
+    </select>
+    <select id="findStudentByName" resultMap="studentMap">
+        select * from student where name=#{name}
+    </select>
+    <resultMap id="studentMap" type="com.array.commonmodule.bean.Student">
+        <constructor>
+            <idArg column="userId" javaType="long"/>
+            <arg column="name" javaType="String"/>
+            <arg column="password" javaType="String"/>
+            <arg column="studentId" javaType="String" />
+            <arg column="nickName" javaType="String" />
+            <arg column="mail" javaType="String" />
+            <arg column="telephone" javaType="String" />
+            <arg column="userface" javaType="String" />
+        </constructor>
+    </resultMap>
+</mapper>

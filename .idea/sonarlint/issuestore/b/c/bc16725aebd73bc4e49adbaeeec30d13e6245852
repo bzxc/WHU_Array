@@ -1,0 +1,31 @@
+
+†
+java:S1128"iRemove this unused import 'org.springframework.security.web.authentication.AuthenticationFailureHandler'.(á†ÒÚ8¯Ÿ¦Ëá.
+`
+java:S1128"CRemove this unused import 'javax.servlet.http.HttpServletResponse'.(Á¨ïë8¯Ÿ¦Ëá.
+_
+java:S1128"BRemove this unused import 'javax.servlet.http.HttpServletRequest'.(ø©¹…8¯Ÿ¦Ëá.
+V
+java:S1128	"@Remove this unused import 'com.array.commonmodule.bean.Student'.(è¬ó†
+s
+java:S1128"VRemove this unused import 'org.springframework.security.core.AuthenticationException'.(¤ò›¿8¯Ÿ¦Ëá.
+M
+java:S1128!"0Remove this unused import 'java.io.PrintWriter'.(ÓŞÏÛ8¯Ÿ¦Ëá.
+w
+java:S3305("\Inject this field value directly into "authenticationManager", the only method that uses it.(¢ß¥ùÿÿÿÿ
+‹
+java:S1128"iRemove this unused import 'org.springframework.security.web.authentication.AuthenticationSuccessHandler'.(Â©ŠÏüÿÿÿÿ8¯Ÿ¦Ëá.
+R
+java:S1128 "0Remove this unused import 'java.io.IOException'.(ªº»Úıÿÿÿÿ8¯Ÿ¦Ëá.
+j
+java:S1128"MRemove this unused import 'org.springframework.security.core.Authentication'.(ñıÓ“8¯Ÿ¦Ëá.
+w
+java:S3305+"\Inject this field value directly into "authenticationManager", the only method that uses it.(Ã´Éµÿÿÿÿÿ
+z
+java:S1488<"_Immediately return this expression instead of assigning it to the temporary variable "manager".(àÃ­ øÿÿÿÿ
+—
+java:S1128"€Remove this unused import 'org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder'.(£ØÓ‰
+X
+java:S1128";Remove this unused import 'javax.servlet.ServletException'.(Š‰™Œ8¯Ÿ¦Ëá.
+b
+java:S1128"@Remove this unused import 'org.springframework.http.HttpMethod'.(Ê¨Ä¡øÿÿÿÿ8êıœÌá.
