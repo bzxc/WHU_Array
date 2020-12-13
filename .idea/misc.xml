@@ -10,6 +10,8 @@
         <option value="$PROJECT_DIR$/common-module/pom.xml" />
         <option value="$PROJECT_DIR$/array-server/pom.xml" />
         <option value="$PROJECT_DIR$/course-data-service/pom.xml" />
+        <option value="$PROJECT_DIR$/message-server/pom.xml" />
+        <option value="$PROJECT_DIR$/message-service/pom.xml" />
       </list>
     </option>
   </component>

@@ -1,10 +1,8 @@
 package com.array.arrayserver.controller;
 
 import com.array.arrayserver.client.CourseClientFeign;
-import com.array.commonmodule.bean.Course;
-import com.array.commonmodule.bean.HomeWork;
-import com.array.commonmodule.bean.Student;
-import com.array.commonmodule.bean.User;
+import com.array.arrayserver.client.MessageClientFeign;
+import com.array.commonmodule.bean.*;
 import com.array.commonmodule.bean.vo.CourseVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -19,6 +17,7 @@ import java.util.List;
 public class CourseController {
     @Autowired
     CourseClientFeign courseClientFeign;
+
 
     @PostMapping("/addCourse")
     public int addCourse(@RequestBody CourseVO courseVO) {

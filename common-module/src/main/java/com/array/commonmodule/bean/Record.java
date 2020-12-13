@@ -8,16 +8,18 @@ public class Record {
     private Long userId;
     private Long questionId;
     private Long recordGrade;
+    private String lang;
     private String recordContent;
 
     public Record() {
     }
 
-    public Record(Long id, Long userId, Long questionId, Long recordGrade, String recordContent) {
+    public Record(Long id, Long userId, Long questionId, Long recordGrade, String lang, String recordContent) {
         this.id = id;
         this.userId = userId;
         this.questionId = questionId;
         this.recordGrade = recordGrade;
+        this.lang = lang;
         this.recordContent = recordContent;
     }
 
@@ -28,8 +30,17 @@ public class Record {
                 ", userId=" + userId +
                 ", questionId=" + questionId +
                 ", recordGrade=" + recordGrade +
+                ", lang='" + lang + '\'' +
                 ", recordContent='" + recordContent + '\'' +
                 '}';
+    }
+
+    public String getLang() {
+        return lang;
+    }
+
+    public void setLang(String lang) {
+        this.lang = lang;
     }
 
     public Long getId() {

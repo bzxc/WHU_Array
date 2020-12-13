@@ -1,0 +1,47 @@
+
+U	java:S106d"9Replace this use of System.out or System.err by a logger.(à¥ø¿8Ëîƒ„ä.
+L
+java:S1128"*Remove this unused import 'java.util.Map'.(¼è½Òşÿÿÿÿ8²¤ßƒä.
+b
+java:S3252$"@Use static access with "com.alibaba.fastjson.JSON" for "toJSON".(¹ÿâşÿÿÿÿ8‚³³ƒä.
+j
+java:S1192,"MDefine a constant instead of duplicating this literal "Content-Type" 4 times.(ÛÓÍÅ8”ö‡ä.
+U	java:S106?"9Replace this use of System.out or System.err by a logger.(à¥ø¿8™ßµƒä.
+V
+java:S4719W"9Replace charset name argument with StandardCharsets.UTF_8(±‡Ùğ8Ëîƒ„ä.
+V	java:S106ˆ"9Replace this use of System.out or System.err by a logger.(à¥ø¿8”ö‡ä.
+L
+java:S2093N"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ8Ëîƒ„ä.
+b
+java:S3252I"@Use static access with "com.alibaba.fastjson.JSON" for "toJSON".(¹ÿâşÿÿÿÿ8Ëîƒ„ä.
+V	java:S106¬"9Replace this use of System.out or System.err by a logger.(à¥ø¿8˜¦¿‡ä.
+n
+java:S2095s"QUse try-with-resources or close this "CloseableHttpClient" in a "finally" clause.(ıê”Ê8”ö‡ä.
+V
+java:S47192"9Replace charset name argument with StandardCharsets.UTF_8(±‡Ùğ8Ô’Üƒä.
+h
+java:S1192-"FDefine a constant instead of duplicating this literal "utf-8" 8 times.(¿±¶¤úÿÿÿÿ8Ëîƒ„ä.
+L
+java:S2093)"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ8Ì÷Ûƒä.
+g	java:S112e"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8Ëîƒ„ä.
+n
+java:S2095*"QUse try-with-resources or close this "CloseableHttpClient" in a "finally" clause.(ıê”Ê8¬éØƒä.
+r
+java:S1192<"PDefine a constant instead of duplicating this literal "æœåŠ¡å™¨å¼‚å¸¸" 4 times.(òµ€ãşÿÿÿÿ8”ö‡ä.
+h	java:S112‰"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8”ö‡ä.
+|
+java:S1192,"_Define a constant instead of duplicating this literal "application/json;charset=utf-8" 4 times.(ÛÓÍÅ8”ö‡ä.
+V
+java:S4719{"9Replace charset name argument with StandardCharsets.UTF_8(±‡Ùğ8”ö‡ä.
+h	java:S112­"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8˜¦¿‡ä.
+W
+java:S4719Ÿ"9Replace charset name argument with StandardCharsets.UTF_8(±‡Ùğ8˜¦¿‡ä.
+M
+java:S2093–"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ8˜¦¿‡ä.
+L
+java:S2093r"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ8”ö‡ä.
+o
+java:S2095—"QUse try-with-resources or close this "CloseableHttpClient" in a "finally" clause.(ıê”Ê8˜¦¿‡ä.
+n
+java:S2095O"QUse try-with-resources or close this "CloseableHttpClient" in a "finally" clause.(ıê”Ê8Ëîƒ„ä.
+g	java:S112@"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8™ßµƒä.

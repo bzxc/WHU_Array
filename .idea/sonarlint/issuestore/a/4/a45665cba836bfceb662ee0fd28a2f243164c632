@@ -1,7 +1,7 @@
 
 g
 java:S1128"LRemove this unused import 'com.array.arrayserver.client.StudentClientFeign'.(„¬ª¥ûÿÿÿÿ
+©
+java:S1130"’Remove the declaration of thrown exception 'org.springframework.security.core.userdetails.UsernameNotFoundException' which is a runtime exception.(É­½Ô
 Z
 java:S1128"?Remove this unused import 'com.array.commonmodule.bean.UserVo'.(ñŠÛ¯ýÿÿÿÿ
-©
-java:S1130"’Remove the declaration of thrown exception 'org.springframework.security.core.userdetails.UsernameNotFoundException' which is a runtime exception.(É­½Ô

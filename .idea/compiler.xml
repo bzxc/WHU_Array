@@ -10,6 +10,7 @@
         <module name="user-data-service" />
         <module name="eureka-server" />
         <module name="array-server" />
+        <module name="message-service" />
         <module name="common-module" />
       </profile>
     </annotationProcessing>
@@ -24,6 +25,7 @@
       <module name="course-data-service" options="-parameters" />
       <module name="course-servise" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
+      <module name="message-service" options="-parameters" />
       <module name="user-data-service" options="-parameters" />
     </option>
   </component>

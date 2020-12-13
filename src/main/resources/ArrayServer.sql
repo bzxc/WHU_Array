@@ -109,6 +109,7 @@ CREATE TABLE `record` (
   `userId` int(11) NOT NULL,
   `questionId` int(11) NOT NULL,
   `recordGrade` int(11) NOT NUll,
+  `lang` varchar(64) NOT NUll,
   `recordContent` text DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `userId` (`userId`),
@@ -140,13 +141,24 @@ message table
 DROP TABLE IF EXISTS `message`;
 CREATE TABLE `message` (
   `messageId` int(11) NOT NULL AUTO_INCREMENT,
+  `messageContent` text NOT NULL,
+  PRIMARY KEY (`messageId`)
+) ENGINE=InnoDB AUTO_INCREMENT=52 DEFAULT CHARSET=utf8;
+
+
+DROP TABLE IF EXISTS `message_user`;
+CREATE TABLE `message_user` (
+  `messageId` int(11) NOT NULL,
   `userId` int(11) NOT NULL,
-  `messageText` text,
-  `messageStatus` TINYINT,
-  `messageTime` datetime,
-  PRIMARY KEY (`messageId`),
+  `state` TINYINT DEFAULT 0,
+  KEY `messageId` (`messageId`),
+  KEY `userId` (`userId`),
+  CONSTRAINT `fk_message` FOREIGN KEY (`messageId`) REFERENCES `message` (`messageId`) ON DELETE CASCADE,
   CONSTRAINT `fk_user_message` FOREIGN KEY (`userId`) REFERENCES `student` (`userId`) ON DELETE CASCADE
 ) ENGINE=InnoDB AUTO_INCREMENT=52 DEFAULT CHARSET=utf8;
+
+
+
 
 
 

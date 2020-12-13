@@ -66,9 +66,9 @@ public class WebScurityConfig extends WebSecurityConfigurerAdapter {
         http.cors()
             .and().authorizeRequests()
                 .antMatchers("/auth/login").permitAll()
-                .antMatchers("/student/**").hasRole("STUDENT")
-                .antMatchers("/teacher/**").hasRole("TEACHER")
-                .anyRequest().permitAll()
+//                .antMatchers("/student/**").hasRole("STUDENT")
+//                .antMatchers("/teacher/**").hasRole("TEACHER")
+                .anyRequest().permitAll() //暂时测试用，正式使用要把上面的注释恢复，可能还要改一些其它页面权限什么的
                 .and()
                 .addFilter(new JWTAuthenticationFilter(authenticationManager()))
                 .addFilter(new JWTAuthorizationFilter(authenticationManager()))
