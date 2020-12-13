@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.array.coursedataservice.mapper.HomeworkMapper">
+    <insert id="addHomework" parameterType="com.array.commonmodule.bean.HomeWork">
+        insert into homework set homeworkId=#{homework},courseId=#{courseId},homeworkContent=#{homeworkContent},homeworkTime=#{homeworkTime}
+    </insert>
+    <delete id="deleteHomework">
+        delete from homework where homeworkId=#{homeworkId}
+    </delete>
+    <update id="updateHomework" parameterType="com.array.commonmodule.bean.HomeWork">
+        update homework set homeworkId=#{homework},courseId=#{courseId},homeworkContent=#{homeworkContent},homeworkTime=#{homeworkTime}
+    </update>
+    <select id="findHomeworkById" resultType="com.array.commonmodule.bean.HomeWork">
+        select * from homework where homewrokId=#{homeworkId}
+    </select>
+    <select id="findAllHomework" resultType="com.array.commonmodule.bean.HomeWork">
+        select * from homework
+    </select>
+    <select id="findQuestionByHomeworkId" resultType="com.array.commonmodule.bean.Question">
+        select * from question where homewrokId=#{homeworkId}
+    </select>
+</mapper>
+<!--        private Long homeworkId;-->
+<!--        private Long courseId;-->
+<!--        private String homeworkContent;-->
+<!--        private Timestamp homeworkTime;-->

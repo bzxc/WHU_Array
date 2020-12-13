@@ -1,0 +1,5 @@
+com/array/messageservice/Controller/MessageController.class
+com/array/messageservice/mapper/MessageMapper.class
+com/array/messageservice/MessageServerApplication.class
+com/array/messageservice/Client/CourseClientFeign.class
+com/array/messageservice/Service/MessageService.class

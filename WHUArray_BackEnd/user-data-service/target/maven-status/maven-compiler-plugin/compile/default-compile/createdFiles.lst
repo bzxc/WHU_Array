@@ -1,0 +1,7 @@
+com/array/userdataservice/UserDataServiceApplication.class
+com/array/userdataservice/controller/TeacherController.class
+com/array/userdataservice/service/TeacherService.class
+com/array/userdataservice/service/StudentService.class
+com/array/userdataservice/mapper/TeacherMapper.class
+com/array/userdataservice/controller/StudentController.class
+com/array/userdataservice/mapper/StudentMapper.class

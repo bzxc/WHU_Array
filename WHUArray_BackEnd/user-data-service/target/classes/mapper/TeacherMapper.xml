@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.array.userdataservice.mapper.TeacherMapper">
+    <insert id="addTeacher" parameterType="com.array.commonmodule.bean.Teacher">
+        insert into teacher set teachername=#{name},teacherpassword=#{password}
+    </insert>
+    <delete id="deleteTeacherById">
+        delete from teacher where teacherid=#{id}
+    </delete>
+    <update id="updateTeacher">
+        update techer set teachername=#{name},teacherpassword=#{password}
+        where teacherid=#{teacherId}
+    </update>
+    <select id="findAll" resultType="com.array.commonmodule.bean.Teacher">
+        select * from teacher
+    </select>
+    <select id="findUserById" resultType="com.array.commonmodule.bean.Teacher">
+        select * from teacher where teacherid=#{id}
+    </select>
+    <select id="findTeacherByName" resultType="com.array.commonmodule.bean.Student">
+        select * from teacher where teachername=#{name}
+    </select>
+</mapper>

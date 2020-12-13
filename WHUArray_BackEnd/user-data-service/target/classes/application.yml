@@ -1,0 +1,25 @@
+server:
+  port: 8008
+
+spring:
+  application:
+    name: user-data-service
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/arrayserver?useSSL=false&serverTimezone=UTC&characterEncoding=UTF-8&allowPublicKeyRetrieval=true
+    username: root
+    password: //yzy428
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.array.commonmodule.bean
+  configuration:
+    jdbc-type-for-null: null
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8002/eureka/
+  instance:
+    instance-id: USER-DATA-SERVICE
+    prefer-ip-address: true
